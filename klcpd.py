@@ -182,7 +182,8 @@ print(netG)
 print(netD)
 print('netG has number of parameters: %d' % (netG_params_count))
 print('netD has number of parameters: %d' % (netD_params_count))
-one = torch.cuda.FloatTensor([1])
+# one = torch.cuda.FloatTensor([1])
+one = torch.tensor(1, dtype=torch.float)
 mone = one * -1
 
 
